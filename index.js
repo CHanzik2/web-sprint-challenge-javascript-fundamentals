@@ -60,7 +60,7 @@ const zooAnimals = [
     array.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
     return displayNames;
   }
-  console.log(animalNames(zooAnimals));
+  
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -71,7 +71,7 @@ const zooAnimals = [
   function lowerCaseNames(array){
     return array.map(item => item.animal_name.toLowerCase());
   }
-  console.log(lowerCaseNames(zooAnimals));
+  
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -96,7 +96,7 @@ const zooAnimals = [
     },0);
     return Pop;
   }
-  console.log(USApop(zooAnimals))
+
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -206,7 +206,11 @@ class CuboidMakerTwo{
   }
 }
 
-
+const cuboidTwo = new CuboidMakerTwo({
+  length: 4,
+  width: 5,
+  height: 5
+});
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 // console.log(cuboidTwo.volume()); // 100
 // console.log(cuboidTwo.surfaceArea()); // 130
